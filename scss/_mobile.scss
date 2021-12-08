@@ -1,0 +1,145 @@
+/*---mobile----*/
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+body{
+	margin:0px;
+}
+.grid{
+	display: grid;
+	grid-template-areas: 
+	"header header"
+	"main footer"
+	"nav nav";
+	grid-template-rows: auto auto auto;
+	grid-template-columns: 90% 10%;
+}
+header{
+	grid-area: header;
+	background-color: #004aad;
+}
+header section{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+header section img{
+	height: 40px;
+	width: 50px;
+} 
+header section h1{
+	font-size: 20px;
+	display: inline;
+	text-align: center;
+	font-family: Impact, fantasy;
+	color: orange;
+	margin-right: 150px
+}
+nav{
+	grid-area: nav;
+	background-color: orange;
+}
+.nav_flex{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	list-style-type: none;
+	padding: 0px 10px;
+}
+footer{
+	grid-area: footer;
+	background-color: #004aad;
+}
+.fondo_rss{
+	background-color: orange;
+}
+.rss_pages{
+	height: 30px;
+	width: 30px;
+	margin: 8px 0px;
+	padding-left: 5px;
+}
+/*pages*/
+.main_pages{
+	grid-area: main;
+	background-image: url(../assets/images/background.png);
+}
+.pages_titulo{
+	text-decoration: underline;
+	font-family: andale mono, monospace;
+	font-size: 30px;
+	margin: 10px;
+	color: #004aad;
+	text-align: center;
+}
+/*index*/
+.main_index{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	grid-area: main;
+	height: 900px;
+	background-image: url(../assets/images/background.png);
+}
+.promo_main{
+	height: 200px;
+	width: 320px;
+	margin: 10px;
+	display: block;
+	margin-bottom: 50px;
+}
+.promo2_main{
+	height: 200px;
+	width: 320px;
+	margin: 10px;
+}
+/*sucursales*/
+.sucursales_texto{
+	height: auto;
+	width: 300px;
+	color: #004aad;
+}
+.sucursales_flex{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+/*menu*/
+.menu_productos{
+	height: 110px;
+	width: 110px;
+	margin: 10px 40px;
+}
+.menu_info{
+	color: #004aad;
+	width: 77px;
+
+}
+.flex_menu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*contactos*/
+.flex_contactos{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 900px;
+}
+/*nosotros*/
+.nosotros_parrafo{
+	width: 70%;
+	height: auto;
+	color: #004aad;
+}
+.nosotros_flex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.nosotros_img{
+	height: 150px;
+	width: 200px;
+}
+}
