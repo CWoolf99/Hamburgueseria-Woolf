@@ -1,0 +1,47 @@
+/*mixin en desktop*/
+@media only screen and (min-width: 768px){
+.rss_pages{
+	margin: 8px 5px;
+}
+@mixin sizes($width, $height) {
+   height: $height;
+   width: $width;
+}
+.rss_pages{
+   @include sizes(40px, 40px);
+}
+/*map get header h1 y header*/
+$colores: (
+  naranja: orange,
+  azul: #004aad,
+);
+header section h1{
+	font-size: 30px;
+	display: inline;
+	text-align: center;
+	font-family: Impact, fantasy;
+	color: map-get($colores, naranja);
+}
+header {
+	grid-area: header;
+	background-color: map-get($colores, azul);
+}
+/*extend*/
+
+.menu_info{
+	color: #004aad;
+	width: 77px;
+
+}
+.naranja{
+	@extend .menu_info;
+	color: orange;
+}
+}
+@media only screen and (min-width: 0px) and (max-width: 768px){
+.menu_info{
+	color: #004aad;
+	width: 77px;
+
+}	
+}
